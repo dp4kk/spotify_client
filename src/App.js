@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Main from './Components/Main'
+import DataContext from './Context/DataContext'
+import { BrowserRouter as Router } from 'react-router-dom'
+const App = () => {
 
-function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+    <DataContext>
+      <Main/>
+    </DataContext>
+    </Router>
+  )
 }
 
-export default App;
+export default App
+
