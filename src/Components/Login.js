@@ -12,7 +12,7 @@ const useStyles=makeStyles(()=>({
 }))
 
 const loginUrl =
-  "https://accounts.spotify.com/authorize?client_id=09043c69448c454b939ca8e9a058eb72&response_type=code&redirect_uri=http://localhost:3000&scope=playlist-modify-private%20playlist-read-private%20playlist-modify-public%20playlist-read-collaborative%20user-read-private%20user-read-email%20user-read-playback-state%20user-modify-playback-state%20user-read-currently-playing%20user-library-modify%20user-library-read%20streaming";
+  "https://accounts.spotify.com/authorize?client_id=09043c69448c454b939ca8e9a058eb72&response_type=code&redirect_uri=https://dp4kk-spotify.netlify.app&scope=playlist-modify-private%20playlist-read-private%20playlist-modify-public%20playlist-read-collaborative%20user-read-private%20user-read-email%20user-read-playback-state%20user-modify-playback-state%20user-read-currently-playing%20user-library-modify%20user-library-read%20streaming";
 
 const Login = () => {
    const classes=useStyles()
