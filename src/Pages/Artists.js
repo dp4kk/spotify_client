@@ -7,6 +7,11 @@ import { AppContext } from '../Context/DataContext';
 const useStyles=makeStyles(()=>({
     card:{
         margin:'5px'
+    },
+    player:{
+        position:'fixed',
+        bottom:0,
+        width:'100%'
     }
 }))
 
@@ -51,6 +56,7 @@ const Artists = ({props}) => {
             );
           })}
         </Grid>
+        <div className={classes.player}>
         <SpotifyPlayer
           token={accessToken}
           uris={songUri ? [songUri] : []}
@@ -58,6 +64,7 @@ const Artists = ({props}) => {
           persistDeviceSelection="false"
           syncExternalDevice="false"
         />
+              </div>
       </React.Fragment>
     );
 }
